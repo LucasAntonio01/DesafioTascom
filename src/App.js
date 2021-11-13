@@ -67,13 +67,12 @@ class App extends React.Component {
                   <h3 className="card-title">Casos no mundo</h3>         
               </div>
               <ul className="list-group list-group-flush">
-                  <li className="list-group-item"><b>NewConfirmed:</b> {response.Global.NewConfirmed}</li>
-                  <li className="list-group-item"><b>TotalConfirmed:</b> {response.Global.TotalConfirmed}</li>
-                  <li className="list-group-item"><b>NewDeaths:</b> {response.Global.NewDeaths}</li>
-                  <li className="list-group-item"><b>TotalDeaths:</b> {response.Global.TotalDeaths}</li>
-                  <li className="list-group-item"><b>NewRecovered:</b> {response.Global.NewRecovered}</li>
-                  <li className="list-group-item"><b>TotalRecovered:</b> {response.Global.TotalRecovered}</li>
-                  <li className="list-group-item"><b>Última Atualização:</b> {response.Global.Date}</li>
+                  <li className="list-group-item"><b>Novos casos confirmados:</b> {response.Global.NewConfirmed}</li>
+                  <li className="list-group-item"><b>Total de casos confirmados:</b> {response.Global.TotalConfirmed}</li>
+                  <li className="list-group-item"><b>Novas mortes:</b> {response.Global.NewDeaths}</li>
+                  <li className="list-group-item"><b>Total de mortes:</b> {response.Global.TotalDeaths}</li>
+                  <li className="list-group-item"><b>Novos curados:</b> {response.Global.NewRecovered}</li>
+                  <li className="list-group-item"><b>Total de curados:</b> {response.Global.TotalRecovered}</li>
               </ul>
            </div>
 

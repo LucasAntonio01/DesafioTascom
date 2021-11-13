@@ -11,15 +11,13 @@ function Card(props) {
                 <h3 className="card-title">{props.country.Country}</h3>         
             </div>
             <ul className="list-group list-group-flush">
-                <li className="list-group-item"><b>CountryCode:</b> {props.country.Country}</li>
-                <li className="list-group-item"><b>Slug:</b> {props.country.Slug}</li>
-                <li className="list-group-item"><b>NewConfirmed:</b> {props.country.NewConfirmed}</li>
-                <li className="list-group-item"><b>TotalConfirmed:</b> {props.country.TotalConfirmed}</li>
-                <li className="list-group-item"><b>NewDeaths:</b> {props.country.NewDeaths}</li>
-                <li className="list-group-item"><b>TotalDeaths:</b> {props.country.TotalDeaths}</li>
-                <li className="list-group-item"><b>NewRecovered:</b> {props.country.NewRecovered}</li>
-                <li className="list-group-item"><b>TotalRecovered:</b> {props.country.TotalRecovered}</li>
-                <li className="list-group-item"><b>Última Atualização:</b> {props.country.Date}</li>
+                <li className="list-group-item"><b>País:</b> {props.country.Country}</li>
+                <li className="list-group-item"><b>Novos casos confirmados:</b> {props.country.NewConfirmed}</li>
+                <li className="list-group-item"><b>Total de casos Confirmados:</b> {props.country.TotalConfirmed}</li>
+                <li className="list-group-item"><b>Novas mortes:</b> {props.country.NewDeaths}</li>
+                <li className="list-group-item"><b>Total de mortes:</b> {props.country.TotalDeaths}</li>
+                <li className="list-group-item"><b>Novos curados:</b> {props.country.NewRecovered}</li>
+                <li className="list-group-item"><b>Total de curados:</b> {props.country.TotalRecovered}</li>
             </ul>
         </div>
     );
