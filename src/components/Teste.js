@@ -49,8 +49,10 @@ class Teste extends React.Component {
         <div> 
           <nav className="navbar navbar-light bg-light">
               <div className="container-fluid">
-                <a className="navbar-brand tascom-icon d-flex"> <img src="http://www.tascominformatica.com.br/img/logo_tascom.png" alt="" width="200" height="50" class="d-inline-block align-text-top"/>
-                <h3>Desafio Tascom</h3> </a>
+                <a className="navbar-brand tascom-icon d-flex justify-content-between w-100"> 
+                <h3>Desafio Tascom</h3>
+                <img src="http://www.tascominformatica.com.br/img/logo_tascom.png" alt="" width="200" height="50" class="d-inline-block align-text-top"/>
+                </a>
               
               </div>
             </nav>
