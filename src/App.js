@@ -60,7 +60,9 @@ class App extends React.Component {
         
 
             <div className="card card-pais">
-              <img src="..." className="card-img-top" alt="..."/>
+              <div className="country-img-wrapper mt-3">
+                <img src="https://www.infoescola.com/wp-content/uploads/2017/11/rotacao-da-terra.gif" className="card-img-top" alt="..."/>
+              </div>
               <div className="card-body">
                   <h3 className="card-title">Casos no mundo</h3>         
               </div>
@@ -78,7 +80,7 @@ class App extends React.Component {
             </div>
             <div class="row"> 
               {response.Countries.slice(0, 10).map(country => (
-                <div class="col-xxl-3">
+                <div class="col-xl-3 col-lg-4 col-md-6">
                   <Card country={country} ></Card>
                 </div>
               ))}'

@@ -14,6 +14,11 @@
   margin-top: 8vh;
 }
 
+.card-img-top {
+  width: 34px;
+  height: 34px;
+}
+
 .App {
   text-align: center;
 }

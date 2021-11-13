@@ -1,9 +1,12 @@
 
 
 function Card(props) {
+    const countrySrcImg = `https://flagicons.lipis.dev/flags/4x3/${props.country.CountryCode.toLowerCase()}.svg`
     return (
         <div className="card card-pais">
-            <img src="..." className="card-img-top" alt="..."/>
+            <div className="country-img-wrapper mt-3">
+                <img src={countrySrcImg} className="card-img-top" alt={props.country.Country}/>
+            </div>
             <div className="card-body">
                 <h3 className="card-title">{props.country.Country}</h3>         
             </div>
