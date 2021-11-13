@@ -1,0 +1,15 @@
+
+.navbar {
+  height: 8vh;
+  background-color: aqua;
+  width: 100%;
+}
+
+.navbar ul {
+  text-decoration: none;
+}
+
+.card-pais {
+  width: 100%;
+  margin-top: 8vh;;
+}
