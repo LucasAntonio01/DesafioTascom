@@ -18,10 +18,6 @@ function Card(props) {
                 <li className="list-group-item"><b>TotalRecovered:</b> {props.country.TotalRecovered}</li>
                 <li className="list-group-item"><b>Última Atualização:</b> {props.country.Date}</li>
             </ul>
-            {/* <div className="card-body">
-                <a href="#" className="card-link">Card link</a>
-                <a href="#" className="card-link">Another link</a>
-            </div> */}
         </div>
     );
   }

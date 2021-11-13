@@ -36,6 +36,8 @@ class Teste extends React.Component {
       )
   }
 
+  sear
+
   render() {
     const { error, isLoaded, response } = this.state;
     if (error) {
@@ -47,18 +49,36 @@ class Teste extends React.Component {
         <div> 
           <nav className="navbar navbar-light bg-light">
               <div className="container-fluid">
-                <a className="navbar-brand">Navbar</a>
-                <form className="d-flex">
-
-                  <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                  <button className="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <a className="navbar-brand tascom-icon d-flex"> <img src="http://www.tascominformatica.com.br/img/logo_tascom.png" alt="" width="200" height="50" class="d-inline-block align-text-top"/>
+                <h3>Desafio Tascom</h3> </a>
+              
               </div>
             </nav>
+          
           <div class="container-fluid">
+            <div class="row-12">
+        
+
+            <div className="card card-pais">
+              <img src="..." className="card-img-top" alt="..."/>
+              <div className="card-body">
+                  <h3 className="card-title">Casos no mundo</h3>         
+              </div>
+              <ul className="list-group list-group-flush">
+                  <li className="list-group-item"><b>NewConfirmed:</b> {response.Global.NewConfirmed}</li>
+                  <li className="list-group-item"><b>TotalConfirmed:</b> {response.Global.TotalConfirmed}</li>
+                  <li className="list-group-item"><b>NewDeaths:</b> {response.Global.NewDeaths}</li>
+                  <li className="list-group-item"><b>TotalDeaths:</b> {response.Global.TotalDeaths}</li>
+                  <li className="list-group-item"><b>NewRecovered:</b> {response.Global.NewRecovered}</li>
+                  <li className="list-group-item"><b>TotalRecovered:</b> {response.Global.TotalRecovered}</li>
+                  <li className="list-group-item"><b>Última Atualização:</b> {response.Global.Date}</li>
+              </ul>
+           </div>
+
+            </div>
             <div class="row"> 
-              {response.Countries.map(country => (
-                <div class="col-2">
+              {response.Countries.slice(0, 10).map(country => (
+                <div class="col-xxl-3">
                   <Card country={country} ></Card>
                 </div>
               ))}'
